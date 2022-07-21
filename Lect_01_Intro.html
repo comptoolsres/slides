@@ -6,47 +6,39 @@
 
 		<title>Computational Tools for Research</title>
 
-		<link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
 
 		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/monokai.css">
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
-                <section data-markdown data-background-image="images/CompToolsRes_image.png">
-                    <textarea data-template>
-                        <h2 class="r-fit-text">Computational Tools for Research</h2>
+                <section data-background-image="images/CompToolsRes_image.png">
+                    <div style="background:darkgray; width: 900px; height: 500px; margin: 10px;">
+                        <h2>Computational Tools for Research</h2>
                         <h3>in Biology</h3>
                 
                         <h4>Matt Gitzendanner</h4>
                         magitz@ufl.edu
-
+                        <br>
                         Fall 2022
-                    </textarea>
+                    </div>
                 </section>
 
                 <section data-markdown>
                     <textarea data-template>
-                        # About Matt
-                        * Population Genetics
-                        * Genomics
-                        * Evolutionary Biology
-                        * Computational Tools
-                        * Positions
-                          * Research Faculty in Biology
-                          * Research Computing Training Team Lead
+                    ## About Matt
+                    * Population Genetics
+                    * Genomics
+                    * Evolutionary Biology
+                    * Computational Tools
+                    * Positions
+                        * Research Faculty in Biology
+                        * Research Computing Training Team Lead
                     </textarea>
                 </section>
 
@@ -59,9 +51,7 @@
                 </section>
 				
 	        <section data-markdown data-background-image="images/piqsels.com-id-zbogw.jpg">
-                    <textarea data-template>
-                      
-                    </textarea>
+
                 </section>
 
                 
@@ -81,18 +71,17 @@
                 </section>
 
                 <section data-markdown>
-                    <textarea data-template>
-                        ## Focus on Tools
-
-                        * As a researcher, how to be competent with computational resources
-                        * Multi-disciplinary by nature
-                          * Informatics
-                          * Computer science
-                          * Software engineering
-                          * Cyberinfrastructure
-                          * Mathematics
-                          * Logic
-                    </textarea>
+                <textarea data-template>
+                ## Focus on Tools
+                * As a researcher, how to be competent with computational resources
+                * Multi-disciplinary by nature
+                    * Informatics
+                    * Computer science
+                    * Software engineering
+                    * Cyberinfrastructure
+                    * Mathematics
+                    * Logic
+                </textarea>
                 </section>
 
                 <section>
@@ -117,50 +106,41 @@
                 </section>
 
                 <section data-markdown>
-                    <textarea data-template>
-                   ## Course Structure
-                    * Read text & watch videos *before* class
-                    * Class will be a time to:
-                      * Ask questions
-                      * Work on examples
-                      * Get help from me and others in the class
-                    </textarea>
+                <textarea data-template>
+                ## Course Structure
+                * Read text & watch videos *before* class
+                * Class will be a time to:
+                    * Ask questions
+                    * Work on examples
+                    * Get help from me and others in the class
+                </textarea>
                 </section>
 
 
                 <section data-markdown>
-                    <textarea data-template>
-                        ## Who are **YOU**?
-
-                        * Form groups of 3-4 people and share:
-                            * Your name
-                            * Year in school & Major
-                            * Coding experience (none, some, good idea, pro)
-                            * One thing you would like to do with a program you write
-                        
-                        * Select **1 person** to report back to the class a summary of majors, experience & goals
-                    </textarea>
+                <textarea data-template>
+                ## Who are **YOU**?
+                * Form groups of 3-4 people and share:
+                   * Your name
+                   * Year in school & Major
+                   * Coding experience (none, some, good idea, pro)
+                   * One thing you would like to do with a program you write
+                    
+                * Select **1 person** to report back to the class a summary of majors, experience & goals
+                </textarea>
                 </section>
 
 
 			</div>
 		</div>
 
-		<script src="js/reveal.js"></script>
-
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				hash: true,
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/highlight/highlight.js' },
-					{ src: 'plugin/notes/notes.js', async: true }
-				]
-			});
-		</script>
+		<script src="dist/reveal.js"></script>
+        <script src="plugin/markdown/markdown.js"></script>
+        <script src="plugin/highlight/highlight.js"></script>
+        <script>
+            Reveal.initialize({
+                plugins: [ RevealMarkdown, RevealHighlight ]
+            });
+        </script>
 	</body>
 </html>
